@@ -1,0 +1,18 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Anuga Viewer
+Comment=Viewer for Anuga files
+Exec=anuga_viewer %U
+GenericName=Anuga Viewer
+Icon=/usr/local/share/anuga_viewer/icon.png
+Path=anuga_viewer/bin
+StartupNotify=true
+Terminal=true
+TerminalOptions=\s--noclose
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=
+Categories=Science;Application
+GenericName[en_US]=Anuga Viewer
+

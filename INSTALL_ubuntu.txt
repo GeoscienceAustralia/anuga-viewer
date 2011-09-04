@@ -1,0 +1,54 @@
+The following instructions will take you through installing Anuga Viewer on a completely fresh Linux distro, step by step.
+
+1. Install linux distro. I used ubuntu (karmic koala) - http://www.ubuntu.com/getubuntu/download. Used Sun VirtualBox to run it inside a VM.
+
+2. Install svn. You can also install the svn GUI of your choice via ubuntu software centre. I used subcommander.
+
+3. Get anuga-viewer source from: https://www.ausposdevelop.com.au/svn/anuga_viewer/
+check out to ~/anuga_viewer/ (or wherever you want).
+
+4. Verify that file structure is present as so:
+~/anuga_viewer/
+	+ viewer
+		main.cpp
+		...
+	+ include
+		swwreader.h
+		...
+	+ swwreader
+		swwreader.cpp
+		...
+	Doxyfile
+	Makefile
+	INSTALL.txt
+	...
+
+To build anuga_viewer, you will need the following packages. Some of these may be installed already. If there are still packages missing, google is your friend.
+	
+5. Get standard GNU build tools:
+	sudo aptitude install build-essential 
+	
+6. Get GDAL (Geospatial Data Abstraction Library):
+	sudo aptitude install libgdal-dev
+	
+7. Get svnversion:
+	sudo aptitude install subversion-tools
+
+8. Get cppUnit (optional - only for testing):
+	sudo aptitude install libcppunit-dev
+	
+9. As of Nov 2009, you will have to build the latest OSG v2.8.2 from source, as there is no ubuntu package for it yet. Luckily this is painless once you have all the right dependencies.
+
+It has lots of dependencies - the easy way to get them all is to use Synaptic Package Manager to get libopensg-core-dev and cmake before building 2.8.2, then do the following:
+
+   - Get OpenSceneGraph-2.8.2.zip, extract it into your home folder.
+   - Run ./configure, make, sudo make install in this folder to build the libs.
+
+
+   
+10. Now, you should be able to build anuga_viewer. Do the following in the anuga_viewer folder:
+make
+sudo make install
+sudo ldconfig
+
+the executable will be created in the anuga_viewer/bin folder.

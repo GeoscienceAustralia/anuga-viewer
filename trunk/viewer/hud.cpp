@@ -23,7 +23,7 @@
 osg::Vec4 COLORBAR_TEXT_COL(0.8, 0.8, 0.8, 1.0);
 
 
-static const std::string FONT_PATH = "/home/stephen/anuga-viewer/bin/fonts/arial.ttf"; // This is the default font path as used by OSG
+static const std::string FONT_PATH = "/usr/local/etc/anuga-viewer/fonts/arial.ttf"; 
 
 // constructor
 HeadsUpDisplay::HeadsUpDisplay()

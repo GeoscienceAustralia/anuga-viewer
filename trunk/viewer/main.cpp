@@ -137,7 +137,7 @@ int main( int argc, char **argv )
 	  sww->setSwollenDir( std::string(".") );
    else
 	  sww->setSwollenDir( osgDB::getFilePath(argv[0]) );
-   std::cout << sww->getSwollenDir() << std::endl;
+   std::cout << "SWOLLEN_BINDIR = " << sww->getSwollenDir() << std::endl;
 
 
    // default arguments and command line parameters
@@ -242,7 +242,7 @@ int main( int argc, char **argv )
 	// set up the camera manipulators.
 
 	//osgGA::MatrixManipulator * mman = new osgGA::FlightManipulator();
-	osgGA::MatrixManipulator * mman = new osgGA::TerrainManipulator();
+	osgGA::TerrainManipulator * mman = new osgGA::TerrainManipulator();
 	mman->setNode(model);
 	mman->setAutoComputeHomePosition( false );
 	mman->setHomePosition(

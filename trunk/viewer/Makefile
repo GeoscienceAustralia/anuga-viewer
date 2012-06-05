@@ -9,6 +9,8 @@ TOPDIR           =  ..
 #OPTIMIZATION     =  -O2
 OPTIMIZATION     =  -g
 
+OSGHOME = /usr
+
 OSG_INCLUDE      =  ${OSGHOME}/include
 LOCAL_INCLUDE    =  $(TOPDIR)/include
 INCLUDES         =  -I . -I $(LOCAL_INCLUDE) -I $(OSG_INCLUDE) -I/usr/X11R6/include
@@ -26,7 +28,7 @@ else
 endif
 
 X_LIBS           =  -lX11
-OTHER_LIBS       =  -lm -lstdc++
+OTHER_LIBS       =  -lm -lstdc++ -lnetcdf `gdal-config --libs`
 LIBS            +=  -losg -losgText -losgDB -losgUtil -losgGA \
                     -lOpenThreads -losgViewer -lswwreader \
                     $(GL_LIBS) $(X_LIBS) $(OTHER_LIBS) $(OSX_LIBS)

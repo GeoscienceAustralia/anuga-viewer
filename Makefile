@@ -17,6 +17,9 @@ test:
 	
 install:
 	cd swwreader; make install
-
+	mkdir /usr/local/etc/anuga-viewer
+	cp -r images/ /usr/local/etc/anuga-viewer/
+	cp -r bin/fonts/ /usr/local/etc/anuga-viewer/
+	mv /bin/anuga-viewer /usr/local/bin
 
 

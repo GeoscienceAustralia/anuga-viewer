@@ -136,7 +136,8 @@ int main( int argc, char **argv )
    else if( osgDB::getFilePath(argv[0]) == "" )
 	  sww->setSwollenDir( std::string(".") );
    else
-	  sww->setSwollenDir( osgDB::getFilePath(argv[0]) );
+          //sww->setSwollenDir( osgDB::getFilePath(argv[0]) );
+	  sww->setSwollenDir( std::string( "/usr/local/etc/anuga-viewer" ) );
    std::cout << "SWOLLEN_BINDIR = " << sww->getSwollenDir() << std::endl;
 
 
@@ -217,7 +218,7 @@ int main( int argc, char **argv )
 
 	if( !arguments.read("-nosky") )
 	{
-		std::string sky_tex_path = sww->getSwollenDir() + std::string("/../images/sky_small.jpg");
+		std::string sky_tex_path = sww->getSwollenDir() + std::string("/images/sky_small.jpg");
 		std::cout << "sky texture path: " << sky_tex_path << std::endl;
 		
 		// surrounding sky sphere

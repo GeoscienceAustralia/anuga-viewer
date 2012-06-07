@@ -6,6 +6,7 @@
   Copyright (C) 2004, 2009 Geoscience Australia
 */
 
+#include <iostream>
 #include <stdio.h>
 #include <sstream>
 #include <osg/Geode>
@@ -23,7 +24,9 @@
 osg::Vec4 COLORBAR_TEXT_COL(0.8, 0.8, 0.8, 1.0);
 
 
-static const std::string FONT_PATH = "/home/stephen/anuga-viewer/bin/fonts/arial.ttf"; // This is the default font path as used by OSG
+//static const std::string FONT_PATH = "/home/stephen/anuga-viewer/bin/fonts/arial.ttf"; // This is the default font path as used by OSG
+
+
 
 // constructor
 HeadsUpDisplay::HeadsUpDisplay()
@@ -38,6 +41,20 @@ HeadsUpDisplay::HeadsUpDisplay()
    _projection->setMatrix( osg::Matrix::ortho2D(0,ORTHO2D_WIDTH,0,ORTHO2D_HEIGHT) );
 
    // font
+   std::string SWOLLEN_BINDIR;
+   std::string FONT_PATH;
+   char *ptr = getenv( "SWOLLEN_BINDIR" );
+
+   if (ptr)
+      SWOLLEN_BINDIR = std::string(ptr);
+   else
+      SWOLLEN_BINDIR = std::string( "." );
+
+   FONT_PATH = SWOLLEN_BINDIR + std::string( "/fonts/arial.ttf" );
+   std::cout << "FONT_PATH = " << FONT_PATH << std::endl;
+   //std::cout << "SWOLLEN_BINDIR = " << SWOLLEN_BINDIR << std::endl;
+
+
 	_font = osgText::readFontFile(FONT_PATH);	
    assert(_font);
 

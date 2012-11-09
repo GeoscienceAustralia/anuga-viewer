@@ -7,6 +7,7 @@ UNAME := $(shell uname)
 TOPDIR           =  ..
 
 OPTIMIZATION     =  -O2
+OSGHOME = /usr/local
 
 NETCDF_INCLUDE   =  /sw/include
 OSG_INCLUDE      =  ${OSGHOME}/include
@@ -32,7 +33,7 @@ X_LIBS           =  -lX11
 GDAL_LIBS        =  `gdal-config --libs`
 OTHER_LIBS       =  -lm -lstdc++
 LIBS            +=  -losg -losgDB -lOpenThreads $(NETCDF_LIBS) $(X_LIBS) $(OTHER_LIBS) $(OSX_LIBS) $(GDAL_LIBS)
-LIBDIRS          =  -L/usr/lib -L/usr/X11R6/lib -L/sw/lib -L/usr/local/lib
+LIBDIRS          =  -L/usr/lib -L/usr/X11R6/lib -L/sw/lib -L/usr/local/lib64 -L/usr/local/lib
 
 COMPILER         =  g++
 NAME             =  swwreader

@@ -9,7 +9,7 @@ TOPDIR           =  ..
 #OPTIMIZATION     =  -O2
 OPTIMIZATION     =  -g
 
-OSGHOME = /usr
+OSGHOME = /usr/local
 
 OSG_INCLUDE      =  ${OSGHOME}/include
 LOCAL_INCLUDE    =  $(TOPDIR)/include
@@ -32,7 +32,7 @@ OTHER_LIBS       =  -lm -lstdc++ -lnetcdf `gdal-config --libs`
 LIBS            +=  -losg -losgText -losgDB -losgUtil -losgGA \
                     -lOpenThreads -losgViewer -lswwreader \
                     $(GL_LIBS) $(X_LIBS) $(OTHER_LIBS) $(OSX_LIBS)
-LIBDIRS          =  -L/usr/lib -L/usr/X11R6/lib -L/sw/lib -L/usr/local/lib -L$(TOPDIR)/bin
+LIBDIRS          =  -L/usr/lib -L/usr/X11R6/lib -L/sw/lib -L/usr/local/lib64 -L/usr/local/lib -L$(TOPDIR)/bin
 
 NAME             =  anuga_viewer
 TARGETDIR        =  $(TOPDIR)/bin

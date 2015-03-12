@@ -54,9 +54,7 @@ HeadsUpDisplay::HeadsUpDisplay()
    std::cout << "FONT_PATH = " << FONT_PATH << std::endl;
    //std::cout << "SWOLLEN_BINDIR = " << SWOLLEN_BINDIR << std::endl;
 
-
-	_font = osgText::readFontFile(FONT_PATH);	
-   assert(_font);
+   _font = osgText::readFontFile(FONT_PATH);	
 
    // title text
    _titletext = addText(osg::Vec3(20,20,0), *_font);
@@ -67,7 +65,7 @@ HeadsUpDisplay::HeadsUpDisplay()
    _timevalue = 0.0;
    _dirtytime = true;
 
-	_dirtytimeseries = false;
+   _dirtytimeseries = false;
 
    // state
    osg::StateSet *state = _projection->getOrCreateStateSet();
@@ -250,8 +248,6 @@ void HeadsUpDisplay::setTimeSeriesData(osg::ref_ptr<osg::FloatArray> aData, floa
 void HeadsUpDisplay::addStatusLine(const std::string & aLabel, osg::Geode* aParentGeode)
 {
 	StatusData data;
-
-	assert(_font);
 
 	data._drawable = addText(osg::Vec3(_status_pos.x(), _status_pos.y(), 0), *_font);
 

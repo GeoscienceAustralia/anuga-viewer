@@ -1,0 +1,1 @@
+ANUGA is a software implementation of a hydrodynamic model which is specifically designed to model wetting and drying processes. ANUGA is a joint development project between Geoscience Australia (GA) and the Australian National University (ANU). This site hosts the ANUGA viewer, used to visualize the simulation results of ANUGA.

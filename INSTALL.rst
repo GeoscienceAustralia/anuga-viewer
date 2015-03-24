@@ -10,36 +10,35 @@ BUILDING FROM SOURCE
 
 1) The ANUGA viewer has several dependencies. 
 
-   OpenThreads, OpenSceneGraph:
-            - http://openscenegraph.sourceforge.net
-            - This version of anuga viewer works with OpenSceneGraph-2.8.2.
-	    - Windows: OSG has many dependencies - it may be easier to download the DLL's and libs than build everything
-	    - Linux: OSG should build easily - just download the source and run the configure/make/make install scripts. 
-              You may need to apt-get various components, such as the OpenGL libs.
-            - ensure you can run the examples that come with OSG
-              prior to building the viewer (these live in the 
-              OpenSceneGraph/bin directory on Windows).
+   OpenThreads, OpenSceneGraph
+   
+         - http://openscenegraph.sourceforge.net
+         - This version of anuga viewer works with OpenSceneGraph-2.8.2.
+         - Windows: OSG has many dependencies - it may be easier to download 
+	   the DLL's and libs than build everything
+         - Linux: OSG should build easily - just download the source and run the 
+	   configure/make/make install scripts. 
+           You may need to apt-get various components, such as the OpenGL libs.
+         - ensure you can run the examples that come with OSG
+           prior to building the viewer (these live in the 
+           OpenSceneGraph/bin directory on Windows).
 
-   NetCDF   - a self-describing binary file format I/O library
+   NetCDF   
+   
+         - a self-describing binary file format I/O library
+                 - current version is 4.0.1
 
-	        - current version is 4.0.1
-
-            - Windows: http://my.unidata.ucar.edu/content/software/netcdf/index.html
-
-	    - Linux: use sudo apt-get install libnetcdf-dev
-
-            - require the header file netcdf.h and the library proper to
-              link against
+         - Windows: http://my.unidata.ucar.edu/content/software/netcdf/index.html
+         - Linux: use sudo apt-get install libnetcdf-dev
+         - require the header file netcdf.h and the library proper to
+           link against
 
    cppUnit
 
-            - a unit testing framework for C++
-
-            - http://cppunit.sourceforge.net
-
-	        - used for regression testing and verification of new platforms
-
-            - this is optional
+         - a unit testing framework for C++
+         - http://cppunit.sourceforge.net
+                 - used for regression testing and verification of new platforms
+         - this is optional
 
 
 2) Set environment variables:

@@ -26,7 +26,9 @@ BUILDING FROM SOURCE
    NetCDF   
    
         - a self-describing binary file format I/O library
-              - current version is 4.0.1
+        
+             - current version is 4.0.1
+             
         - Windows: http://my.unidata.ucar.edu/content/software/netcdf/index.html
         - Linux: use sudo apt-get install libnetcdf-dev
         - require the header file netcdf.h and the library proper to
@@ -36,7 +38,9 @@ BUILDING FROM SOURCE
 
          - a unit testing framework for C++
          - http://cppunit.sourceforge.net
-                 - used for regression testing and verification of new platforms
+         
+               - used for regression testing and verification of new platforms
+               
          - this is optional
 
 

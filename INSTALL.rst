@@ -20,18 +20,17 @@ BUILDING FROM SOURCE
 	  configure/make/make install scripts. 
           You may need to apt-get various components, such as the OpenGL libs.
         - ensure you can run the examples that come with OSG
-           prior to building the viewer (these live in the 
-           OpenSceneGraph/bin directory on Windows).
+          prior to building the viewer (these live in the 
+          OpenSceneGraph/bin directory on Windows).
 
    NetCDF   
    
-         - a self-describing binary file format I/O library
-                 - current version is 4.0.1
-
-         - Windows: http://my.unidata.ucar.edu/content/software/netcdf/index.html
-         - Linux: use sudo apt-get install libnetcdf-dev
-         - require the header file netcdf.h and the library proper to
-           link against
+        - a self-describing binary file format I/O library
+              - current version is 4.0.1
+        - Windows: http://my.unidata.ucar.edu/content/software/netcdf/index.html
+        - Linux: use sudo apt-get install libnetcdf-dev
+        - require the header file netcdf.h and the library proper to
+          link against
 
    cppUnit
 

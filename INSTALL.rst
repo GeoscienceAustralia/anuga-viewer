@@ -153,7 +153,8 @@ The GA edge::
 DEBUG
 =====
 
-::
+Set Debug mode::
+
 	set OSG_NOTIFY_LEVEL=DEBUG
 
 

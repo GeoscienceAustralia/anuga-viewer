@@ -36,12 +36,12 @@ BUILDING FROM SOURCE
 
    cppUnit
 
-         - a unit testing framework for C++
-         - http://cppunit.sourceforge.net
+        - a unit testing framework for C++
+        - http://cppunit.sourceforge.net
          
                - used for regression testing and verification of new platforms
                
-         - this is optional
+        - this is optional
 
 
 2) Set environment variables:
@@ -89,7 +89,7 @@ BUILDING FROM SOURCE
    bin directory.  Test the build with any of the sample datasets in the
    distribution's data subdirectory, e.g.:: 
          
-      cd bin; ./viewer ../data/laminar.sww
+      cd bin; ./anuga_viewer ../data/laminar.sww
 	 
 
 	 	 
@@ -125,19 +125,14 @@ Minor tweaks to re-enable stereo functionality.
 I have verified that this works on the vizlab active stereo system. 
 For the GA passive stereo system, you'll need to set the following environment variables.
 
-Environment Variable Name Value Description 
+Environment Variable Name Value Description::
 
-OSG_STEREO_MODE HORIZONTAL_SPLIT Use horizontal split stereo mode when in stereo 
-
-OSG_SCREEN_DISTANCE 0.50 Set the distance the viewer is from screen in metres (default shown) 
-
-OSG_SCREEN_HEIGHT 0.26 Set the height of image on the screen in metres (default shown) 
-
-OSG_SCREEN_WIDTH 0.325 Set the width of image on the screen in metres (default shown) 
-
-OSG_EYE_SEPARATION 0.06 Set the eye separation  interoccular distance (default shown.) 
-
-OSG_SPLIT_STEREO_HORIZONTAL_SEPARATION 42 Set the number of pixels between the left and right viewports (default shown) 
+	OSG_STEREO_MODE HORIZONTAL_SPLIT Use horizontal split stereo mode when in stereo 
+	OSG_SCREEN_DISTANCE 0.50 Set the distance the viewer is from screen in metres (default shown) 
+	OSG_SCREEN_HEIGHT 0.26 Set the height of image on the screen in metres (default shown) 
+	OSG_SCREEN_WIDTH 0.325 Set the width of image on the screen in metres (default shown) 
+	OSG_EYE_SEPARATION 0.06 Set the eye separation  interoccular distance (default shown.) 
+	OSG_SPLIT_STEREO_HORIZONTAL_SEPARATION 42 Set the number of pixels between the left and right viewports (default shown) 
 
 
 The default physical dimensions are for a computer monitor. 
@@ -145,19 +140,14 @@ These need to be adjusted for the larger setup.
 Typical values might be 2m viewing distance from screen, screen dimensions of 2m x 1.5m. 
 Eye separation obviously stays the same. Then just start swollen with the "dash dash stereo" flag.
 
-The GA edge:
+The GA edge::
 
-OSG_STEREO_MODE QUAD_BUFFER
-
-OSG_SCREEN_DISTANCE 3.0 
-
-OSG_SCREEN_HEIGHT 2.0
-
-OSG_SCREEN_WIDTH 2.66
-
-OSG_EYE_SEPARATION 0.06 
-
-OSG_SPLIT_STEREO_HORIZONTAL_SEPARATION 0
+	OSG_STEREO_MODE QUAD_BUFFER
+	OSG_SCREEN_DISTANCE 3.0 
+	OSG_SCREEN_HEIGHT 2.0
+	OSG_SCREEN_WIDTH 2.66
+	OSG_EYE_SEPARATION 0.06 
+	OSG_SPLIT_STEREO_HORIZONTAL_SEPARATION 0
 
 	 
 DEBUG

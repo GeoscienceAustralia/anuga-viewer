@@ -8,20 +8,20 @@ Note:: - this readme will be deprecated in favour of install guides for each pla
 BUILDING FROM SOURCE
 --------------------
 
-	1) The ANUGA viewer has several dependencies. 
+1) The ANUGA viewer has several dependencies. 
 
-		OpenThreads, OpenSceneGraph
+	OpenThreads, OpenSceneGraph
 		
-			- http://openscenegraph.sourceforge.net
-			- This version of anuga viewer works with OpenSceneGraph-2.8.2.
-         - Windows: OSG has many dependencies - it may be easier to download 
-	   the DLL's and libs than build everything
-         - Linux: OSG should build easily - just download the source and run the 
-	   configure/make/make install scripts. 
-           You may need to apt-get various components, such as the OpenGL libs.
-         - ensure you can run the examples that come with OSG
-           prior to building the viewer (these live in the 
-           OpenSceneGraph/bin directory on Windows).
+		- http://openscenegraph.sourceforge.net
+		- This version of anuga viewer works with OpenSceneGraph-2.8.2.
+        	- Windows: OSG has many dependencies - it may be easier to download 
+	   	  the DLL's and libs than build everything
+         	- Linux: OSG should build easily - just download the source and run the 
+	   	  configure/make/make install scripts. 
+                  You may need to apt-get various components, such as the OpenGL libs.
+         	- ensure you can run the examples that come with OSG
+                  prior to building the viewer (these live in the 
+                  OpenSceneGraph/bin directory on Windows).
 
    NetCDF   
    

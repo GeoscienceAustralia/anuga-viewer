@@ -3,17 +3,17 @@
 Install
 =======
 
-** Note - this readme will be deprecated in favour of install guides for each platform. **
+Note:: - this readme will be deprecated in favour of install guides for each platform. 
 
 BUILDING FROM SOURCE
 --------------------
 
-1) The ANUGA viewer has several dependencies. 
+	1) The ANUGA viewer has several dependencies. 
 
-   OpenThreads, OpenSceneGraph
-   
-         - http://openscenegraph.sourceforge.net
-         - This version of anuga viewer works with OpenSceneGraph-2.8.2.
+		OpenThreads, OpenSceneGraph
+		
+			- http://openscenegraph.sourceforge.net
+			- This version of anuga viewer works with OpenSceneGraph-2.8.2.
          - Windows: OSG has many dependencies - it may be easier to download 
 	   the DLL's and libs than build everything
          - Linux: OSG should build easily - just download the source and run the 

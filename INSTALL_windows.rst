@@ -1,9 +1,13 @@
 Building from source
 =====================
 
-1. Get the latest ANUGA viewer source via git.
+Get Source
+-----------
 
-2. INSTALL OSG
+Get the latest ANUGA viewer source via git.
+
+NSTALL OSG
+-----------
 
   a) Download OpenSceneGraph-2.8.2 from sourceforge: http://openscenegraph.sourceforge.net. You want the full dev package: http://www.openscenegraph.org/downloads/stable_releases/OpenSceneGraph-2.8.2/binaries/Windows/VisualStudio9/openscenegraph-2.8.2-win32-x86-vc90-Release.zip
 
@@ -11,7 +15,8 @@ Building from source
 
   c) Go to Control Panel/System/Advanced/Environment Variables and add the following variable. OSG_ROOT => C:\<3rd party lib folder>
 
-3. INSTALL NETCDF
+INSTALL NETCDF
+--------------
 
   a) These are painful to build; you can download the DLLs here instead: http://www.unidata.ucar.edu/software/netcdf/docs/faq.html#windows_netcdf4
 
@@ -19,7 +24,8 @@ Building from source
   b) set the environment variable NETCDF_DIR to the location of binary netcdf.dll and netcdf.lib.
 
 
-4. INSTALL GDAL
+INSTALL GDAL
+------------
 
   a) You can download source from here: http://download.osgeo.org/gdal/gdal170.zip
 
@@ -28,16 +34,17 @@ Building from source
   c) Go to Control Panel/System/Advanced/Environment Variables and add the following variable.
 GDAL_DIR => C:\<3rd party lib folder>
 
-
-
-5. COMPILATION
+COMPILATION
+-----------
 
   1) Within VisualStudio, Open the solution in viewer visualstudio subdirectory
 
   2) Build the solution
 
 
-6. RUNNING
+RUNNING
+-------
+
 The binary (viewer.exe on Windows) lives in the distribution's bin directory.  Test the build with any of the sample datasets in the  distribution's data subdirectory, e.g.::
 
    cd bin; ./viewer ../data/laminar.sww

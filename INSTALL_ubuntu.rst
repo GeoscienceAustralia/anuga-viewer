@@ -41,13 +41,13 @@ The following instructions will take you through installing Anuga Viewer on a co
 
 	sudo apt-get install libgdal-dev
 	
-    7. Get svnversion::
+    7. Get git::
 
 	sudo apt-get install git
 
     8. Get cppUnit (optional - only for testing)::
 
-	sudo apt-getinstall libcppunit-dev
+	sudo apt-get install libcppunit-dev
 	
     9. Get OpenScenGraph::
 
@@ -61,4 +61,4 @@ The following instructions will take you through installing Anuga Viewer on a co
          sudo make install
          sudo ldconfig
 
-      the executable will be created in the anuga_viewer/bin folder.
+      the executable will be created in the anuga_viewer/bin folder. You might want to add that directory to your path environment variable.

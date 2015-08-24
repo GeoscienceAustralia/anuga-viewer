@@ -5,12 +5,14 @@ Ubuntu Install
 
 The following instructions will take you through installing Anuga Viewer on a completely fresh Linux distro, step by step.
 
-    1. Install linux distro. I used ubuntu - http://www.ubuntu.com/getubuntu/download. Used VirtualBox to run it inside a VM.
+    1. Install linux distro. I used ubuntu - http://www.ubuntu.com/getubuntu/download.
 
     2. Install git. 
 
     3. Get anuga-viewer source from: https://github.com/GeoscienceAustralia/anuga-viewer.git
        check out to ~/anuga_viewer/ (or wherever you want).
+       
+  
 
     4. Verify that file structure is present as so::
 

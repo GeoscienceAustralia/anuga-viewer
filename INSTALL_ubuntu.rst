@@ -12,11 +12,12 @@ The following instructions will take you through installing Anuga Viewer on a co
           sudo apt-get install git
 
     3. Get anuga-viewer source from: https://github.com/GeoscienceAustralia/anuga-viewer.git
-       check out to ~/anuga_viewer/ (or wherever you want).
+       check out to ~/anuga_viewer/ (or wherever you want). I.e::
        
-  
+         git clone https://github.com/GeoscienceAustralia/anuga-viewer.git
+      
 
-    4. Verify that file structure is present as so::
+    4. Verify that file structure is present as follows::
 
         ~/anuga_viewer/
 	    + viewer
@@ -45,21 +46,18 @@ The following instructions will take you through installing Anuga Viewer on a co
 
 	sudo apt-get install libgdal-dev
 	
-    7. Get git::
 
-	sudo apt-get install git
-
-    8. Get cppUnit (optional - only for testing)::
+    7. Get cppUnit (optional - only for testing)::
 
 	sudo apt-get install libcppunit-dev
 	
-    9. Get OpenScenGraph::
+    8. Get OpenScenGraph::
 
         sudo apt-get install libopenscenegraph-dev  
 
 
    
-    10. Now, you should be able to build anuga_viewer. Do the following in the anuga_viewer folder::
+    9. Now, you should be able to build anuga_viewer. Do the following in the anuga_viewer folder::
 
          make
          sudo make install

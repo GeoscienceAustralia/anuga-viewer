@@ -7,7 +7,9 @@ The following instructions will take you through installing Anuga Viewer on a co
 
     1. Install linux distro. I used ubuntu - http://www.ubuntu.com/getubuntu/download.
 
-    2. Install git. 
+    2. Install git. For instance using apt-get::
+    
+          sudo apt-get install git
 
     3. Get anuga-viewer source from: https://github.com/GeoscienceAustralia/anuga-viewer.git
        check out to ~/anuga_viewer/ (or wherever you want).

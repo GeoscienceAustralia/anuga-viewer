@@ -58,7 +58,7 @@ $(TARGET) : $(OBJ)
 # on every build, recreate version() string based on SVN revision number
 version.cpp:
 	echo -n 'const char* version() { const char* s = "Revision: ' > version.cpp
-	git rev-list --count HEAD >> version.cpp
+	git rev-list --count HEAD | tr '\n' ' ' >> version.cpp
 	echo '"; return s; }' >> version.cpp
 
 

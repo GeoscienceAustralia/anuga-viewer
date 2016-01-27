@@ -1,1 +1,1 @@
-const char* version() { const char* s = "Revision: 14M"; return s; }
+const char* version() { const char* s = "Revision: Unversioned directory"; return s; }

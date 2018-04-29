@@ -22,7 +22,7 @@ The following instructions will take you through installing Anuga Viewer on a co
       
 #. Setup Environment variables in your `.bashrc` file::
     	
-    	export SWOLLEN_BINDIR=/home/user/anuga-viewer/bin
+    	export SWOLLEN_BINDIR=/home/<<your_ubuntu_user_directory>>/anuga-viewer/bin
     	export PATH=$PATH:$SWOLLEN_BINDIR
     	
 #. From a new terminal, test the install by going to directory `~/anuga-viewer/data` and running the following command  (use escape to get out of the viewer)::

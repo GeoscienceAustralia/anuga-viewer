@@ -30,7 +30,7 @@ public:
 
     BedSlope(SWWReader *sww);
     osg::Geode* get(){ return _node; }
-    osg::BoundingBox getBound(){ return _geom->getBound(); }
+    const osg::BoundingBox getBound(){ return _geom->getBound(); }
 
 	/**
 	 * Called on mesh data refresh.

@@ -1,2 +1,1 @@
-const char* version() { const char* s = "Revision: 40 "; return s; }
-
+const char* version() { const char* s = "Revision: 49 "; return s; }

@@ -22,7 +22,7 @@ public:
 public:
     KeyboardEventHandler( int nTimesteps, float tps);
     virtual bool handle(const osgGA::GUIEventAdapter& ea, osgGA::GUIActionAdapter&);
-    virtual void accept(osgGA::GUIEventHandlerVisitor&) {}
+    /* virtual void accept(osgGA::GUIEventHandlerVisitor&) {} */
     virtual bool isPaused(){return _paused;}
     virtual void setPaused(bool value){_paused = value;}
 	virtual WireframeMode getWireframeMode()	{	return _wireframeMode;	}

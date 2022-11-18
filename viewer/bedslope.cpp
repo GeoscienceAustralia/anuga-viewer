@@ -55,7 +55,7 @@ BedSlope::BedSlope(SWWReader* sww)
 		_stateset->setTextureAttributeAndModes( 0, texture, osg::StateAttribute::ON );
 	}
 
-	onRefreshTextured(texture>0);
+	onRefreshTextured(texture!=NULL);
 }
 
 

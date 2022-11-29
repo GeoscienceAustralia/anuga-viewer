@@ -1,5 +1,5 @@
 
-installation
+Installation
 ~~~~~~~~~~~~
 
 For windows the version on sourceforge seems to still work fine. Here is the link:

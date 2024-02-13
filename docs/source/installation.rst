@@ -14,7 +14,7 @@ in the data directory with the executable viewer.exe in the viewer's bin directo
 
 
 Ubuntu Install from Source
-==============
+==========================
 
 For Linux we recommend installation from source:
 

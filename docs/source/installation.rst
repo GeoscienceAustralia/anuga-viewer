@@ -7,7 +7,7 @@ Windows Install (pre-compiled)
 
 The version on sourceforge seems to still work fine on windows 10 and 11. 
 
-`Here is the link for the Ppecompiled Viewer for Windows <https://sourceforge.net/projects/anuga/files/anuga_viewer_windows/>`_. 
+`Here is the link for the pre-compiled Viewer for Windows <https://sourceforge.net/projects/anuga/files/anuga_viewer_windows/>`_. 
 
 Download the file `anuga_viewer.zip` and extract to a convenient location and associate the `cairns.sww` file 
 in the data directory with the executable viewer.exe in the viewer's bin directory.

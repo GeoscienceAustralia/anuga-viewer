@@ -41,7 +41,6 @@ extensions = [
     'sphinx.ext.mathjax',
     'sphinx.ext.coverage',
     'sphinx.ext.viewcode',
-    'nbsphinx',
 ]
 
 def linkcode_resolve(domain, info):

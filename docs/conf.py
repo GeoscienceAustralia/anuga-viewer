@@ -34,13 +34,8 @@ import sphinx_rtd_theme
 
 extensions = [
     'sphinx_rtd_theme',
-    'sphinx.ext.duration',
-    'sphinx.ext.doctest',
     'sphinx.ext.autodoc',
-    'sphinx.ext.autosummary',
     'sphinx.ext.mathjax',
-    'sphinx.ext.coverage',
-    'sphinx.ext.viewcode',
 ]
 
 def linkcode_resolve(domain, info):

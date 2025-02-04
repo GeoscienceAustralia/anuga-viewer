@@ -38,6 +38,13 @@ The following instructions will take you through installing Anuga Viewer on a fr
 
         make
         sudo make install
+
+.. note::
+    
+   You might need to `deactivate` your conda environment if you are using one which 
+   has compilers installed, as the `make install` command seems to work better with the system compilers  
+
+  
     
 #. Setup Environment variables in your `.bashrc` file::
         

@@ -1,0 +1,5 @@
+# Requirements to install anuga in read the docs
+
+sphinx_rtd_theme
+sphinx
+

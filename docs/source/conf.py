@@ -16,9 +16,9 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'ANUGA Viewer'
+project = 'ANUGA viewer'
 copyright = 'Commonwealth of Australia (Geoscience Australia) and the Australian National University 2004-Now'
-author =  'Stephen Roberts, Ole Nielsen'
+author =  'Stephen Roberts, Ole Nielsen, Gareth Davies'
 
 # The full version, including alpha/beta/rc tags
 release = '1.0'
@@ -34,14 +34,8 @@ import sphinx_rtd_theme
 
 extensions = [
     'sphinx_rtd_theme',
-    'sphinx.ext.duration',
-    'sphinx.ext.doctest',
     'sphinx.ext.autodoc',
-    'sphinx.ext.autosummary',
     'sphinx.ext.mathjax',
-    'sphinx.ext.coverage',
-    'sphinx.ext.viewcode',
-    'nbsphinx',
 ]
 
 def linkcode_resolve(domain, info):
@@ -53,6 +47,7 @@ def linkcode_resolve(domain, info):
     return "https://somesite/sourcerepo/%s.py" % filename
 
 
+#autodoc_mock_imports = ["anuga"]
 
 autodoc_default_flags = ['members']
 autosummary_generate = True

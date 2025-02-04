@@ -1,19 +1,22 @@
 
-installation
+Installation
 ~~~~~~~~~~~~
 
-For windows the version on sourceforge seems to still work fine. Here is the link:
+Windows Install (pre-compiled)
+===============================
 
-Viewer: `Precompiled Viewer for Windows <https://sourceforge.net/projects/anuga/files/anuga_viewer_windows/>`_. 
+The version on sourceforge seems to still work fine on windows 10 and 11. 
+
+`Here is the link for the pre-compiled Viewer for Windows <https://sourceforge.net/projects/anuga/files/anuga_viewer_windows/>`_. 
+
 Download the file `anuga_viewer.zip` and extract to a convenient location and associate the `cairns.sww` file 
 in the data directory with the executable viewer.exe in the viewer's bin directory.
 
+
+Ubuntu Install from Source
+==========================
+
 For Linux we recommend installation from source:
-
-
-Ubuntu Install
-==============
-
 
 The following instructions will take you through installing Anuga Viewer on a fresh Linux distro, step by step.
 
@@ -35,6 +38,13 @@ The following instructions will take you through installing Anuga Viewer on a fr
 
         make
         sudo make install
+
+.. note::
+    
+   You might need to `deactivate` your conda environment if you are using one which 
+   has compilers installed, as the `make install` command seems to work better with the system compilers  
+
+  
     
 #. Setup Environment variables in your `.bashrc` file::
         
@@ -50,6 +60,9 @@ The following instructions will take you through installing Anuga Viewer on a fr
 Building from source on Windows
 ===============================
 
+Installing from source is quite complicated, and indeed has not been tested for many years as we have concentrated on the linux version. As such we recommend install using the old pre-compiled version.
+
+Here is our old build instructions:
 
 #. Get the latest ANUGA viewer source via git.
 
